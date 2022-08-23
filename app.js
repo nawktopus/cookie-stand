@@ -33,7 +33,7 @@ let seattle = {
             list.appendChild(entry);
         }
         let totalEntry = document.createElement('li');
-        totalEntry.textContent = 'Total: ' + this.dailyTotal;
+        totalEntry.textContent = 'Total: ' + this.dailyTotal + ' Cookies';
         list.appendChild(totalEntry);
     }
     
@@ -73,7 +73,7 @@ let tokyo = {
             list.appendChild(entry);
         }
         let totalEntry = document.createElement('li');
-        totalEntry.textContent = 'Total: ' + this.dailyTotal;
+        totalEntry.textContent = 'Total: ' + this.dailyTotal + ' Cookies';
         list.appendChild(totalEntry);
     }
     
@@ -113,7 +113,7 @@ let dubai = {
             list.appendChild(entry);
         }
         let totalEntry = document.createElement('li');
-        totalEntry.textContent = 'Total: ' + this.dailyTotal;
+        totalEntry.textContent = 'Total: ' + this.dailyTotal + ' Cookies';
         list.appendChild(totalEntry);
     }
     
@@ -153,7 +153,7 @@ let paris = {
             list.appendChild(entry);
         }
         let totalEntry = document.createElement('li');
-        totalEntry.textContent = 'Total: ' + this.dailyTotal;
+        totalEntry.textContent = 'Total: ' + this.dailyTotal + ' Cookies';
         list.appendChild(totalEntry);
     }
     
@@ -193,7 +193,7 @@ let lima = {
             list.appendChild(entry);
         }
         let totalEntry = document.createElement('li');
-        totalEntry.textContent = 'Total: ' + this.dailyTotal;
+        totalEntry.textContent = 'Total: ' + this.dailyTotal + ' Cookies';
         list.appendChild(totalEntry);
     }
     
