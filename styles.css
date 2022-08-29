@@ -14,7 +14,7 @@ table {
     border: thin solid black;
     width:fit-content;  
     display: flex;
-   align-content: center;
+   justify-content: center;
 }
 
 h1 {
