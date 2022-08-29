@@ -1,0 +1,49 @@
+.salmon {
+    display: flex;
+    align-content: auto;
+}
+ tr, td, th {
+    border: thin solid black;
+  }
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    border: thin solid black;
+    width:fit-content;  
+    display: flex;
+   align-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    font-size: large;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(38,157,199,255);
+}
+
+#fish {
+    display: grid;
+    justify-items: center;
+}
+#cut {
+    display: grid;
+    grid-column-start: 2;
+}
+ #cookie {
+    display: grid;
+    grid-column-start: 3;
+}
+#fam {
+    display: grid;
+    grid-column-start: 4;
+}
