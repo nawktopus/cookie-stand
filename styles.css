@@ -1,6 +1,7 @@
-.salmon {
+ #salmon {
     display: flex;
-    align-content: auto;
+    justify-content: center;
+    margin:auto;
 }
  tr, td, th {
     border: thin solid black;
@@ -8,13 +9,14 @@
 
 h2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 table {
     border: thin solid black;
     width:fit-content;  
     display: flex;
-   align-content: center;
+   justify-content: center;
+   margin:auto;
 }
 
 h1 {
@@ -30,20 +32,96 @@ a {
 body {
     background-color: rgba(38,157,199,255);
 }
-
 #fish {
-    display: grid;
+    display: flex;
     justify-items: center;
+    margin: auto;
 }
 #cut {
-    display: grid;
-    grid-column-start: 2;
+    display: flex;
+    justify-items: center;
+    margin: auto;
 }
- #cookie {
-    display: grid;
-    grid-column-start: 3;
+
+#cookie {
+    display: flex;
+    justify-items: center;
+    margin: auto;
 }
+
 #fam {
-    display: grid;
-    grid-column-start: 4;
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+#shirt {
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+
+#fi {
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    padding:100px;
+}
+
+#bot {
+    display: flex;
+    justify-content: center;
+    padding:100px;
+}
+
+#main {
+    text-align: justify;
+    width: 483px;
+}
+
+#img.text {
+    display: block;
+    margin: 0 auto;
+}
+
+#img-text {
+    display: block;
+    margin: 0 auto;
+}
+
+#image-text {
+    display: block;
+    margin: 0 auto;
+}
+
+#imgtext {
+    display: block;
+    margin: 0 auto;
+}
+
+#imageText {
+    display: block;
+    margin: 0 auto;
+}
+#image.text {
+    display: block;
+    margin: 0 auto;
+}
+
+#side {
+    text-align: justify;
+    width: 324px;
+}
+#last {
+    text-align: justify;
+    width: 282px;
+}
+
+#frost {
+    text-align: center;
+    width: 276px;
 }
