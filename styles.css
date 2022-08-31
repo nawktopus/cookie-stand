@@ -16,7 +16,7 @@ table {
     width:fit-content;  
     display: flex;
    justify-content: center;
-
+    margin: auto;
 }
 
 h1 {
