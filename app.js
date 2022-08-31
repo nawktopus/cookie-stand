@@ -46,7 +46,6 @@ function genBetween(low,high) {
 
 function generateFooter() {
     let table = document.getElementById("grand");
-
     let row = document.createElement('tr');
     let head = document.createElement('th');
     head.textContent = 'Totals';
@@ -63,7 +62,7 @@ function generateFooter() {
         }
         cell.textContent = salesPeHour;
         row.appendChild(cell);
-}
+    }
     let cell = document.createElement('td');
     let totals = 0;
     for (let store of allStores) {
@@ -71,7 +70,8 @@ function generateFooter() {
     }
     cell.textContent = totals;
     row.appendChild(cell);
-}    
+};
+
 let allStores = [];
 
 new Store('Seattle', 23, 65, 6.3,);
@@ -87,25 +87,32 @@ allStores[3].display();
 allStores[4].display();
 generateFooter();
 
-let head1 = document.getElementById('head');
-let cell1 = document.createElement('th');
-let cell3 = document.createElement('td');
-cell3.textContent = ' ';
-cell1.appendChild(cell3);
-head1.appendChild(cell1);
+let head = document.getElementById('head');
+let emptyCell = document.createElement('th');
+head.appendChild(emptyCell);
 
 for (let i = 0; i < hours.length; i++) {
-let header = document.getElementById('head');
 let cell = document.createElement('th');
-let cell2 = document.createElement('td');
-cell2.textContent = hours[i];
-cell.appendChild(cell2);
-header.appendChild(cell);
+cell.textContent = hours[i];
+head.appendChild(cell);
 }
 
-let head2 = document.getElementById('head');
-let cell4 = document.createElement('th');
-let cell5 = document.createElement('td');
-cell5.textContent = 'Daily Totals';
-cell4.appendChild(cell5);
-head2.appendChild(cell4);
+let totalCell = document.createElement('th');
+totalCell.textContent = 'Daily Totals';
+head.appendChild(totalCell);
+
+let cookieForm = document.getElementById('cookie-form');
+
+cookieForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  let newLocation = event.target.name.value;
+  let minCust = parseInt(event.target.min.value);
+  let maxCust = parseInt(event.target.max.value);
+  let avgCookies = parseInt(event.target.avg.value);
+  let myStore = new Store(newLocation, minCust, maxCust, avgCookies);
+  myStore.display();  
+  console.log('form submitted');
+  document.getElementById("grand").textContent = '';
+  generateFooter();
+  document.getElementById('cookie-form').reset();
+});

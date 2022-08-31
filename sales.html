@@ -13,7 +13,6 @@
     font-weight: bold;
     font-size: large;
   }
-
     </style>
     <a href="index.html"> Home </a>
     <title>Sales Page by Location</title>
@@ -27,6 +26,29 @@
   <tfoot id="grand">  
   </tfoot>
   </table>
+
+  <form id="cookie-form">
+    <fieldset>
+      <legend> New Location Data Entry Form</legend>
+        <label> Location Name:</label> 
+        <input type="text" name="name" required="required">
+      <div>  
+        <label> Minimum Customers:</label> 
+        <input type="number" name="min" required="required">
+      </div>
+      <div>
+        <label> Maximum Customers:</label> 
+        <input type="number" name="max" required="required">
+      </div>
+      <div>
+        <label> Average Cookies Sold:</label> 
+        <input type="number" step="any" name="avg" required="required">
+      </div>
+      <br>
+        <button type="submit" onclick="alert('Thank you for your submission!')">Submit Location</button>
+    </fieldset>
+  </form>
+
   <script src="app.js"> </script>
   </body>
 </html>
