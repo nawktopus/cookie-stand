@@ -3,15 +3,23 @@
   <head>
     <style>
        table, tr, td, th {
-    border: thin solid black;
+    border: thin solid #000000;
     background-color: orange;
+    color:black;
+    font-family: Helvetica, sans-serif
   }
   body {
-    background-color: rgba(38,157,199,255);
+    background-color: darkblue;
 }
   a {
-    font-weight: bold;
     font-size: large;
+    font-weight: bolder;
+    color: white;
+  }
+
+  #cookie-form {
+    color: white;
+    font-family: Helvetica, sans-serif
   }
     </style>
     <a href="index.html"> Home </a>
@@ -26,7 +34,6 @@
   <tfoot id="grand">  
   </tfoot>
   </table>
-
   <form id="cookie-form">
     <fieldset>
       <legend> New Location Data Entry Form</legend>
@@ -48,7 +55,6 @@
         <button type="submit" onclick="alert('Thank you for your submission!')">Submit Location</button>
     </fieldset>
   </form>
-
   <script src="app.js"> </script>
   </body>
 </html>
