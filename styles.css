@@ -22,15 +22,19 @@ table {
 h1 {
     display: flex;
     justify-content: center;
+    font-family: "Playfair Display", medium;
 }
 
 a {
     font-size: large;
     font-weight: bold;
+    color: orange;
 }
 
 body {
-    background-color: rgba(38,157,199,255);
+    background-color: darkblue;
+    font-family: Georgia, serif;
+    color: orange;
 }
 #fish {
     display: flex;
